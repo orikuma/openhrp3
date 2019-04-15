@@ -643,9 +643,9 @@ static int find_collision_info(
     find_intersection_pt(ip2, p1, p2, mp0, mp1);
 
     double dp;
-    if(get_normal_vector_test(col_p->n_vector, ef11, ip2, ip1, p3, q3, n1, m1, p1, p2, q1, q2) &&
-       find_common_perpendicular(p1, p2, q1, q2, ip1, ip2, n1, m1, col_p->n_vector, dp)){
-
+    // if(get_normal_vector_test(col_p->n_vector, ef11, ip2, ip1, p3, q3, n1, m1, p1, p2, q1, q2) &&
+    //    find_common_perpendicular(p1, p2, q1, q2, ip1, ip2, n1, m1, col_p->n_vector, dp)){
+    if (1) {
         ip3 = ip1; ip4 = ip2;
         col_p->num_of_i_points = 2;
         col_p->depth = dp;

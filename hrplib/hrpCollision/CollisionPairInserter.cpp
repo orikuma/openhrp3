@@ -417,7 +417,7 @@ int CollisionPairInserter::apply(
     contact.n_vector.noalias() = CD_Rot2 * n_vector;
     contact.n.noalias() = CD_Rot2 * n1;
     contact.m.noalias() = CD_Rot2 * m1;
-        examine_normal_vector(id1, id2, ctype);
+    // examine_normal_vector(id1, id2, ctype);
 
 #ifdef DEPTH_CHECK
     // analyze_neighborhood_of_i_point(b1, b2, cdContactsCount, ctype);
